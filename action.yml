@@ -1,0 +1,26 @@
+name: "aux flow"
+description: "aux"
+
+inputs:
+  input:
+    description: "Define apk path input"
+    required: true
+
+  output:
+    description: "Define apk path output"
+    required: true
+
+runs:
+  using: "composite"
+  env:
+    input: ${{ inputs.input }}
+    output: ${{ inputs.output }}
+
+  steps:
+    - name: print stuff
+      shell: bash
+      run: |
+        echo "input: $input"
+        echo "output: $output"
+      
+    
