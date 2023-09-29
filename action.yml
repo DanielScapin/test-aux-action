@@ -12,12 +12,12 @@ inputs:
 
 runs:
   using: "composite"
-  env:
-    input: ${{ inputs.input }}
-    output: ${{ inputs.output }}
 
   steps:
     - name: print stuff
+      env:
+        input: ${{ inputs.input }}
+        output: ${{ inputs.output }}
       shell: bash
       run: |
         echo "input: $input"
