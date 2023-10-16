@@ -20,7 +20,7 @@ runs:
         output: ${{ inputs.output }}
       shell: bash
       run: |
-        echo "running in branch test"
+        echo "running in branch test 2"
         echo "input: $input"
         echo "output: $output"
       
