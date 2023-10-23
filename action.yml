@@ -6,6 +6,10 @@ inputs:
     description: "Define apk path input"
     required: true
 
+  version:
+    description: "test version"
+    required: true
+
   output:
     description: "Define apk path output"
     required: true
