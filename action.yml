@@ -21,11 +21,13 @@ runs:
     - name: print stuff
       env:
         input: ${{ inputs.input }}
+        version: ${{ inputs.version }}
         output: ${{ inputs.output }}
       shell: bash
       run: |
         echo "running in branch test 2"
         echo "input: $input"
+        echo "version: $version"
         echo "output: $output"
       
     
